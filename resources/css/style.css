@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    opacity: 0.9;
+}
+
+
+/* navbar */
+
+.nav-bar{
+    display: flex;
+    border-bottom: 1px solid seashell;
+    height: 69px;  
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 9999;
+    width: 100%; 
+ 
+    
+}
+.nav-bar img{
+    margin-left: 10px;
+}   
+.nav-item{
+    padding-left: 65%;
+   
+}
+.nav-item li{
+    display: inline-flex;
+    padding-left:10px;
+    color: seashell;
+    text-decoration: underline;
+}
+/* missiom */
+
+.mission{
+    position: relative;
+    top: 69px;
+    margin:auto;   
+    width: 1200px;
+    height: 700px;
+    text-align: center;
+    
+}
+.mission>img{
+    overflow: visible;
+    max-height: 100%;
+}
+.mission-content{
+    position: absolute;
+    background-color: black;
+    text-align: center; 
+    top:45%;
+    width: 100%;
+}
+.mission-content>h2,h4{
+    margin:20px auto;
+}
+
+/* tea of the month */
+.row-teamonth{
+    text-align: center;
+    margin-top: 5rem;
+}
+.teamonth{
+    width: 1000px;
+    margin: 0 auto;
+}
+.card{
+    display: flex;
+    text-align: center;
+    padding: auto 10px;
+    flex-wrap: wrap;
+}
+.card-content img{
+    width:300px;
+    height: 200px;
+    padding: 10px;
+}
+.card-content h4{
+    margin-top: 0;
+}
+
+/* location */
+
+.row-location{
+    position: relative;
+    display: block;
+    text-align: center; 
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.location{
+    position: absolute;
+    left:10%;
+    top:10%;
+   
+}
+.location-card{
+    display: flex;
+    flex-wrap: wrap;
+}
+.location-content{
+    width:300px;
+    height: 300px;
+    margin-top: 15px;
+    margin-right: 40px;
+    background-color: black;
+}
+
+.location-content>div>h3,h5{
+    margin:40px auto;
+}
+
+/* contact */
+.row-contact{
+    margin-top: 10px;
+}
+.contact{
+    position: relative;
+    text-align: center;
+    height: 200px;
+}
+
+/* footer */
+footer{
+    position: relative;
+}
+h6{
+    position: relative;
+    text-align: left;
+    margin-left: 20px;
+}
+
