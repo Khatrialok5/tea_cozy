@@ -16,49 +16,52 @@ body{
 
 .nav-bar{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid seashell;
     height: 69px;  
     position: fixed; 
     top: 0; 
     left: 0; 
-    z-index: 9999;
+    z-index: 1;
     width: 100%; 
- 
-    
+    background-color: black;   
 }
+
 .nav-bar img{
     margin-left: 10px;
+    width:auto;
+    height:50px;
 }   
-.nav-item{
-    padding-left: 65%;
-   
-}
+
 .nav-item li{
     display: inline-flex;
-    padding-left:10px;
     color: seashell;
     text-decoration: underline;
 }
+.nav-item> li + li {
+    padding-left:20px;
+}
+
+
+
 /* missiom */
 
-.mission{
+.row-mission{
     position: relative;
     top: 69px;
     margin:auto;   
     width: 1200px;
     height: 700px;
     text-align: center;
+    background-image: url(../images/img-mission-background.jpeg);
     
-}
-.mission>img{
-    overflow: visible;
-    max-height: 100%;
 }
 .mission-content{
     position: absolute;
     background-color: black;
     text-align: center; 
-    top:45%;
+    top:50%;
     width: 100%;
 }
 .mission-content>h2,h4{
@@ -66,17 +69,16 @@ body{
 }
 
 /* tea of the month */
-.row-teamonth{
-    text-align: center;
-    margin-top: 5rem;
-}
+
 .teamonth{
+    text-align: center;
     width: 1000px;
-    margin: 0 auto;
+    margin: 5rem auto 0 auto;
 }
 .card{
     display: flex;
     text-align: center;
+    justify-content: center;
     padding: auto 10px;
     flex-wrap: wrap;
 }
@@ -91,33 +93,33 @@ body{
 
 /* location */
 
-.row-location{
-    position: relative;
+.location{
     display: block;
     text-align: center; 
     width: 1200px;
     height: 500px;
-    margin: 0 auto;
-    overflow: hidden;
+    margin: 10px auto;
     justify-content: center;
+    align-items: center;
+    background-image: url(../images/img-locations-background.jpeg);
 }
 
-.location{
-    position: absolute;
-    left:10%;
-    top:10%;
-   
-}
 .location-card{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+.location-card>.location-content + .location-content{
+    margin-left: 20px;
 }
 .location-content{
     width:300px;
     height: 300px;
     margin-top: 15px;
-    margin-right: 40px;
     background-color: black;
+}
+.location>h2{
+padding-top: 20px;
 }
 
 .location-content>div>h3,h5{
@@ -125,11 +127,9 @@ body{
 }
 
 /* contact */
+
 .row-contact{
     margin-top: 10px;
-}
-.contact{
-    position: relative;
     text-align: center;
     height: 200px;
 }
@@ -138,7 +138,7 @@ body{
 footer{
     position: relative;
 }
-h6{
+footer h6{
     position: relative;
     text-align: left;
     margin-left: 20px;
